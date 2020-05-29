@@ -41,7 +41,7 @@ public class Bot extends TelegramLongPollingBot {
         KeyboardRow ThreeWeatherKeyboardRow = new KeyboardRow();
 
         OneWeatherKeyboardRow.add("Current weather");
-        OneWeatherKeyboardRow.add("Weather for tomorrow (test)");
+        OneWeatherKeyboardRow.add("Weather for tomorrow (not working now)");
 
 
         var sendMessage = new SendMessage();
