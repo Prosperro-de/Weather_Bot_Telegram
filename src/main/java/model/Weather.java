@@ -14,17 +14,19 @@ public class Weather {
     int clouds;
     float wind_spd;
     String wind_cdir_full;
+    int rh;
 
 
     @Override
     public String toString() {
         return
-                "City                          " + city_name +  "\n" +
-                "Country             " + getCountyFlagAndName() + "\n" +
-                "Temperatur       "+ "\uD83C\uDF21 " + temp + " \u2103" + " \n" +
-                "Clouds               " + getCloudsStatus() +" " + clouds + "%" + "\n" +
-                "Wind speed      " + "\uD83C\uDF2C"+ " " + wind_spd + " m/s" + "\n" +
-                "Wind direction        " + wind_cdir_full;
+                "City                              " + city_name +  "\n" +
+                "Country                 " + getCountyFlagAndName() + "\n" +
+                "Temperatur           "+ "\uD83C\uDF21 " + temp + " \u2103" + " \n" +
+                "Clouds                   " + getCloudsStatus() +" " + clouds + "%" + "\n" +
+                "Wind speed           " + "\uD83C\uDF2C"+ " " + wind_spd + " m/s" + "\n" +
+                "Wind direction             " + wind_cdir_full + "\n" +
+                "Relative humidity    " + "\uD83D\uDCA7" + rh + "%";
 
 
     }
